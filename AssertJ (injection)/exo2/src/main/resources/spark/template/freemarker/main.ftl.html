@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Todo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>My Todo-list</h1>
+    </div>
+
+    <div>
+        <form class="form-inline" role="form" action="/create" method="post">
+            <div class="form-group">
+                <label class="sr-only" for="newItem">New item</label>
+                <input type="text" class="form-control" name="newItem" id="newItem" placeholder="New item"/>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Items</h2>
+        <#list items as item>
+            <p>
+                ${item} &nbsp;
+                <a class="btn btn-danger btn-xs" href="/complete/${item_index}">Done</a>
+            </p>
+        </#list>
+    </div>
+
+</div>
+
+</body>
+</html>
