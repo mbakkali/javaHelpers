@@ -1,0 +1,25 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  // Exemple : dépendance de projet
+   compile 'org.apache.thrift:libthrift:0.9.3'
+
+  // Exemple : dépendance de tests uniquements
+  // testCompile 'junit:junit:4.12'
+}
+
+sourceCompatibility = '1.8'
+
+// Si le plugin 'application' est activé, spécifier ici la classe principale ...
+ mainClassName = 'fileshare.Main'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.12'
+}
