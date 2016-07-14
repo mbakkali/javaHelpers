@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.insalyon.tc.mid.di.SomeConfigurationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-16T22:12:47" hostname="patrik-elementary" time="0.091">
+  <properties/>
+  <testcase name="basic_greeter_class_config" classname="fr.insalyon.tc.mid.di.SomeConfigurationTest" time="0.091"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[May 17, 2016 12:12:47 AM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37cd4930: startup date [Tue May 17 00:12:47 CEST 2016]; root of context hierarchy
+May 17, 2016 12:12:47 AM org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker postProcessAfterInitialization
+INFO: Bean 'someConfiguration' of type [class fr.insalyon.tc.mid.di.greeter.SomeConfiguration$$EnhancerBySpringCGLIB$$3c5f3a22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+May 17, 2016 12:12:47 AM fr.insalyon.tc.mid.di.greeter.PoliteGreeter kickoff
+INFO: Kicking off!
+]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.insalyon.tc.mid.di.AnotherGreetingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-16T22:12:47" hostname="patrik-elementary" time="0.091">
+  <properties/>
+  <testcase name="basic_casual_greeter_xml_config" classname="fr.insalyon.tc.mid.di.AnotherGreetingTest" time="0.091"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[May 17, 2016 12:12:47 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52cb0996: startup date [Tue May 17 00:12:47 CEST 2016]; root of context hierarchy
+May 17, 2016 12:12:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [casual-greeter-app.xml]
+]]></system-err>
+</testsuite>
