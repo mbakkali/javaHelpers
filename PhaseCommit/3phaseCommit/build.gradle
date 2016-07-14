@@ -1,0 +1,31 @@
+group 'tp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile "com.sparkjava:spark-core:2.5" //add to build.gradle
+    compile 'com.mashape.unirest:unirest-java:1.4.6'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+mainClassName = 'tp.ServeurApplication'
+
+run {
+    /* Need to split the space-delimited value in the exec.args */
+    args System.getProperty("exec.args").split()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
